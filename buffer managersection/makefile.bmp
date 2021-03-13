@@ -1,0 +1,6 @@
+BM: distcommon.h buman.o com.o
+	gcc com.o buman.o -lpthread -o BM
+buman.o : distcommon.h buman.c
+	gcc -c buman.c
+com.o : distcommon.h com.c
+	gcc -c com.c 
